@@ -12,7 +12,12 @@
 
 
 <article class="main-content col-xs-8">
- 
+
+    <form action="" method="post">
+        <input type="text" name="name">
+        <input type="submit" name="submit">
+    </form>
+
 
 	<?php  
 
@@ -20,6 +25,10 @@
 
 
  */
+if(isset($_POST['submit'])){
+    $name = $_POST["name"];
+    echo "You entered: $name";
+}
 
 	
 ?>

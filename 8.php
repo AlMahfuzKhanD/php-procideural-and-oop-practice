@@ -26,6 +26,12 @@
 		Step 4 - echo the variable
 
 	*/
+
+	$text = 'MY Name Is Mahfuz';
+	$salt = 'Your name is not mahfuz';
+	$hash = crypt($text,$salt);
+	echo $hash;
+
 	
 	?>
 
