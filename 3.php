@@ -38,6 +38,11 @@ if($a==4){
 for ($x = 0;$x < 11; $x++){
     echo $x."<br>";
 }
+echo "Foreach started"."<br>";
+$numbers = array(1,2,5,4,8,5,7,5,8,5);
+foreach ($numbers as $abc){
+    echo $abc."<br>";
+}
 
 	$b = "yello";
     switch ($b){

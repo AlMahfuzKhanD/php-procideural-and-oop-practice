@@ -36,8 +36,42 @@ function add($a,$b){
  $return_value = add(10,20);
 echo "Call by value is : $return_value";
 
+echo "<br>";
+function messg($message){
+    echo $message;
+
+}
+
+messg("Hello Friends");
+
+
+function addNumber($num1, $num2){
+    $addi = $num1 + $num2;
+    return $addi;
+}
+
+$res = addNumber(50,20);
+echo "<br>".$res."<br>";
+
+
+echo "Global and Scope<br>";
+
+$glob = "outside";
+
+function fun(){
+    global $glob;
+    $glob = "inside";
+
+};
+
+echo $glob;
+echo "<br>";
+fun();
+    echo $glob;
 	
 ?>
+
+
 
 
 

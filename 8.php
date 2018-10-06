@@ -30,7 +30,11 @@
 	$text = 'MY Name Is Mahfuz';
 	$salt = 'Your name is not mahfuz';
 	$hash = crypt($text,$salt);
-	echo $hash;
+	echo $hash."<br>";
+
+
+	$asoc_array = array("Name" => 'Mahfuz', "Last" => 'Khan');
+	echo $asoc_array['Name']." ". $asoc_array['Last'];
 
 	
 	?>

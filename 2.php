@@ -53,7 +53,11 @@
 
         );
 		$sum = array_sum($addition1);
-		echo $sum;
+		echo $sum."<br>";
+        $asoc_array = array("Name" => 'Mahfuz', "Last" => 'Khan');
+        echo $asoc_array['Name']." ". $asoc_array['Last'];
+
+
 
 
 
