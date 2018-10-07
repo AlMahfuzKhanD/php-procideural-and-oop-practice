@@ -29,6 +29,8 @@
 echo abs(-4.2); // 4.2 (double/float)
 echo abs(5);    // 5 (integer)
 echo abs(-5);   // 5 (integer)
+    echo "<br>.Prebuilt Math functions.<br>";
+    echo rand(1,1000);
 
  echo "<br>.Prebuilt string functions.<br>";
     echo addcslashes('foo[ ]', 'A..z');
