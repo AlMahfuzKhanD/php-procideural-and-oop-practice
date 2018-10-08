@@ -18,23 +18,19 @@ function createRows(){
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-
+##### Prevention of sql injection ###############################
         $username = mysqli_real_escape_string($connection, $username);
         $password = mysqli_real_escape_string($connection, $password);
 
-        /*if($username && $password){
-            echo $username;
-            echo $password;
-        }else{
-            echo "Please enter information";
-        }*/
+        ###################    password encryption ###############
+        $hashFormat = "$2y$10$";
 
-        /* $connection = mysqli_connect('localhost','root','','loginapp');
-         if($connection){
-             echo "we are connected";
-         }else{
-             die("Database connection failed");
-         }*/
+        $salt = "iusesomecrazystrings22";
+        $hashF_and_salt = $hashFormat . $salt;
+
+        $password = crypt($password,$hashF_and_salt);
+
+        ########### encryption done ############
 
 
         $query = "INSERT INTO users (username, password)";
