@@ -18,6 +18,10 @@ function createRows(){
         $username = $_POST['username'];
         $password = $_POST['password'];
 
+
+        $username = mysqli_real_escape_string($connection, $username);
+        $password = mysqli_real_escape_string($connection, $password);
+
         /*if($username && $password){
             echo $username;
             echo $password;
