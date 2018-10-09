@@ -13,7 +13,7 @@
 		</aside><!--SIDEBAR-->
 
 
-			<article class="main-content col-xs-8">
+			<!--<article class="main-content col-xs-8">-->
 			
 		
 	
