@@ -24,10 +24,22 @@
 
 Step 6: Call the method ShowAll
 
-	
-
-		
 	*/
+
+	class Dog{
+	    var $eye = 2;
+	    var $color = "Black";
+	    var $nose = 1;
+
+	    function showAll(){
+	        echo $this->eye."<br>";
+	        echo $this->color."<br>";
+	        echo $this ->nose."<br>";
+        }
+    }
+
+    $pitbull = new Dog();
+	$pitbull ->showAll();
 	
 	?>
 
